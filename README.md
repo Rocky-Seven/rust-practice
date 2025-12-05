@@ -1,14 +1,75 @@
-# Rust Practice - 初心者向けRust学習リポジトリ
+# 🦀 Rust Practice - GitHub Codespacesで学ぶRust
 
-このリポジトリは、プログラミング初心者がGitHub CodespacesでRustを学ぶためのものです。
-
-**パソコンに何もインストール不要！** ブラウザだけで始められます。
+> **ブラウザだけで始められる、初心者向けRust学習リポジトリ**  
+> ブログ「[学びを始めよう](https://my-studies.org/)」と連動した実践的な教材です。
 
 ---
 
-## 🚀 クイックスタート：5分で始める
+## 🎯 このリポジトリについて
 
-### 1. このリポジトリでCodespacesを起動
+このリポジトリは、プログラミング初心者がGitHub CodespacesでRustを学ぶためのものです。
+
+**特徴：**
+- ✅ **パソコンに何もインストール不要** - ブラウザだけで完結
+- ✅ **ブログ記事と連動** - 理論と実践を同時に学べる
+- ✅ **段階的な学習** - 基礎から応用まで順を追って習得
+- ✅ **実践的な練習問題** - 手を動かして学べる
+
+---
+
+## 📚 学習コンテンツ（ブログ連動）
+
+### 第1回：環境構築
+**ブログ記事：** [GitHub CodespacesでRustを始めよう！](https://my-studies.org/get-started-with-rust-on-github-codespaces/)
+- GitHub Codespacesの使い方
+- Rustのインストール
+- 最初の"Hello, World!"
+
+**リポジトリ資料：**
+- [補足ドキュメント](./docs/01_setup.md)
+
+---
+
+### 第2回：変数と型
+**ブログ記事：** （リンクは公開後に追加）
+- 変数の宣言（`let`、`mut`）
+- シャドーイング
+- 基本的なデータ型
+- タプルと配列
+
+**リポジトリ資料：**
+- [学習ガイド](./docs/02_variables.md)
+- [練習問題プロジェクト](./exercises/02_variables/)
+
+---
+
+### 第3回：関数とスコープ（準備中）
+**ブログ記事：** （準備中）
+- 関数の定義と呼び出し
+- パラメータと戻り値
+- 式と文の違い
+
+---
+
+### 第4回：制御構文（準備中）
+**ブログ記事：** （準備中）
+- if式
+- loop、while、for
+- match式
+
+---
+
+### 第5回：所有権（準備中）
+**ブログ記事：** （準備中）
+- 所有権とは
+- 借用（Borrowing）
+- スライス（Slice）
+
+---
+
+## 🚀 クイックスタート
+
+### 1. Codespacesを起動
 
 1. 画面上部の緑色の **「<> Code」** ボタンをクリック
 2. **「Codespaces」** タブをクリック
@@ -16,18 +77,9 @@
 
 → 1〜2分待つと、ブラウザ内でコードエディタが開きます！
 
-### 2. 自動セットアップを待つ
+### 2. 最初のプログラムを実行
 
-初回起動時、Rust環境が自動的にインストールされます（数分かかります）。
-
-**画面下部のターミナルで以下のメッセージが出たら完了です：**
-```
-Done. Press any key to close the terminal.
-```
-
-### 3. Hello, World! を実行
-
-ターミナル（画面下部の黒い部分）で、以下をコピー＆ペーストしてEnterキーを押してください：
+ターミナル（画面下部）で以下を実行：
 
 ```bash
 cargo new hello_world
@@ -37,56 +89,42 @@ cargo run
 
 **「Hello, world!」と表示されれば成功です！** 🎉
 
----
-
-## 📖 このリポジトリの使い方
-
-### ファイル構成
-
-```
-Rust-practice/
-├── README.md                    # このファイル
-├── SETUP-FOR-beginner.md        # 詳しいセットアップガイド
-├── STUDY.md                     # Rustの学習ガイド
-├── 2_Variables.md               # 変数と型の練習
-├── .devcontainer/               # 自動セットアップ設定
-│   └── devcontainer.json
-└── hello_world/                 # 最初のプロジェクト（作成後）
-    └── src/
-        └── main.rs
-```
-
-### 学習の流れ
-
-1. **環境構築** - このREADMEで完了！
-2. **Hello, World!** - 最初のプログラム実行
-3. **変数と型** - `2_Variables.md`を読んで練習
-4. **関数** - 次のステップ
-5. **制御構文** - if、loop、forなど
-6. **所有権** - Rustの最重要概念
-
-詳しくは `STUDY.md` を参照してください。
+詳しくは[第1回のブログ記事](https://my-studies.org/get-started-with-rust-on-github-codespaces/)をご覧ください。
 
 ---
 
-## 🛠️ 基本的な使い方
+## 📖 使い方
 
-### プロジェクトの作成
+### ドキュメントを読む
+
+各回の学習内容は `docs/` フォルダにあります：
 
 ```bash
-cargo new プロジェクト名
-cd プロジェクト名
+# 第1回の補足を読む
+cat docs/01_setup.md
+
+# 第2回の学習ガイドを読む
+cat docs/02_variables.md
 ```
 
-### プログラムの実行
+### 練習問題に取り組む
+
+各回の練習問題は `exercises/` フォルダにあります：
 
 ```bash
+# 第2回の練習問題に取り組む
+cd exercises/02_variables
 cargo run
+
+# 個別の練習問題を実行
+cargo run --bin ex01_basic
+cargo run --bin ex02_shadowing
+cargo run --bin challenges
 ```
 
-### コードの編集
+### コードを編集
 
-1. 左側のファイル一覧から `src/main.rs` を開く
+1. 左側のファイル一覧から編集したいファイルを開く
 2. コードを編集
 3. 保存（Ctrl+S または Cmd+S）
 4. `cargo run` で実行
@@ -94,192 +132,114 @@ cargo run
 ### 変更をGitHubに保存
 
 ```bash
-# リポジトリのルートに移動
-cd /workspaces/Rust-practice
-
-# 変更を追加
+cd /workspaces/rust-practice
 git add .
-
-# コミット（保存）
-git commit -m "説明メッセージ"
-
-# GitHubにアップロード
+git commit -m "Complete exercises 02"
 git push
 ```
 
 ---
 
-## 📚 学習リソース
+## 🗂️ ディレクトリ構造
 
-### このリポジトリ内
-
-- **SETUP-FOR-beginner.md** - 詳しい環境構築ガイド
-- **STUDY.md** - Rustとは？学習の意義
-- **2_Variables.md** - 変数と型の練習メニュー
-
-### 外部リソース
-
-- [The Rust Programming Language (日本語版)](https://doc.rust-jp.rs/book-ja/) - 公式入門書
-- [Rust by Example (日本語版)](https://doc.rust-jp.rs/rust-by-example-ja/) - 実例で学ぶ
-- [公式サイト](https://www.rust-lang.org/ja)
-
----
-
-## 💡 よくある質問
-
-### Q. Codespacesって何？
-
-GitHub Codespacesは、ブラウザ上で動く開発環境です。自分のパソコンに何もインストールせずにプログラミングができます。
-
-### Q. 無料で使える？
-
-はい！GitHubの無料アカウントで月に一定時間まで無料で使えます。使わないときはCodespacesを停止すると節約できます。
-
-### Q. データは保存される？
-
-はい。`git commit`と`git push`をすれば、GitHubに永久保存されます。Codespacesを削除してもデータは残ります。
-
-### Q. エラーが出た！
-
-**よくあるエラーと解決方法：**
-
-#### 「git index.lock」エラー
-```bash
-cd /workspaces/Rust-practice
-rm -f .git/index.lock
 ```
-
-#### ターミナルが見えない
-- 上部メニュー「View」→「Terminal」
-- または Ctrl+` (バッククォート)
-
-#### コマンドを間違えた
-- Ctrl+C で中断できます
-
-### Q. Codespacesを停止するには？
-
-1. 左下の緑色の「Codespaces」ボタンをクリック
-2. 「Stop Current Codespace」を選択
-
-または、ブラウザのタブを閉じて、30分放置すると自動停止します。
-
----
-
-## 🎯 最初の目標
-
-### Step 1: Hello, World! を実行 ✅
-
-```bash
-cargo new hello_world
-cd hello_world
-cargo run
-```
-
-### Step 2: コードを変更してみる
-
-`src/main.rs`を以下のように変更：
-
-```rust
-fn main() {
-    println!("こんにちは、Rustの世界へ！");
-    println!("私の最初のプログラムです！");
-}
-```
-
-保存して再度実行：
-```bash
-cargo run
-```
-
-### Step 3: GitHubに保存
-
-```bash
-cd /workspaces/Rust-practice
-git add .
-git commit -m "My first Rust program"
-git push
+rust-practice/
+├── docs/                     # 📚 学習ドキュメント（ブログ連動）
+│   ├── 01_setup.md          # 第1回：環境構築
+│   ├── 02_variables.md      # 第2回：変数と型
+│   └── ...
+│
+├── exercises/                # 🏋️ 練習問題
+│   ├── 02_variables/        # 第2回の練習
+│   ├── 03_functions/        # 第3回の練習
+│   └── ...
+│
+└── projects/                 # 🚀 実践プロジェクト
+    ├── hello_rust/          # Hello, World!
+    └── ...
 ```
 
 ---
 
-## 📝 次のステップ
-
-Hello, World! が動いたら、次は変数と型を学びましょう！
-
-**`2_Variables.md`を開いて、順番に練習してください。**
-
-```bash
-cargo new variables
-cd variables
-# 2_Variables.mdの手順に従って練習
-```
-
----
-
-## 🦀 Rustについて
-
-Rustは、**安全で高速な**プログラミング言語です。
-
-### なぜRustを学ぶ？
-
-- ✅ メモリ安全性 - バグが少ない
-- ✅ 高速性 - C/C++並みのパフォーマンス
-- ✅ 親切なエラーメッセージ - 学びやすい
-- ✅ 需要が高い - 企業での採用が増加中
-- ✅ 楽しい！ - Stack Overflowで最も愛される言語
-
-詳しくは `STUDY.md` を読んでください。
-
----
-
-## 🤝 困ったときは
-
-### エラーメッセージをよく読む
-
-Rustのエラーメッセージはとても親切です。解決方法も提案してくれます。
-
-### ドキュメントを見る
-
-このリポジトリの `.md` ファイルに詳しい説明があります。
-
-### 公式ドキュメントを確認
-
-- https://doc.rust-jp.rs/book-ja/
-
----
-
-## ✨ Tips
-
-### ショートカットキー
-
-- **Ctrl+S** (Cmd+S) - ファイル保存
-- **Ctrl+`** - ターミナル表示/非表示
-- **Ctrl+/** - コメント切り替え
-- **Ctrl+C** - 実行中の処理を中断
+## 💡 学習のヒント
 
 ### 効率的な学習方法
 
-1. **コードを書く** - 読むだけでなく手を動かす
-2. **エラーから学ぶ** - エラーは敵ではなく先生
-3. **小さく始める** - 完璧を求めず、まず動かす
-4. **繰り返す** - 何度も書いて慣れる
+1. **ブログ記事を読む** - まず理論を理解する
+2. **ドキュメントを参照** - `docs/` で詳細を確認
+3. **コードを書く** - `exercises/` で実際に手を動かす
+4. **エラーから学ぶ** - エラーメッセージは親切な先生
+
+### ショートカットキー
+
+| キー | 動作 |
+|------|------|
+| **Ctrl+S** | ファイル保存 |
+| **Ctrl+`** | ターミナル表示/非表示 |
+| **Ctrl+/** | コメント切り替え |
+| **Ctrl+C** | 実行中の処理を中断 |
 
 ---
 
-## 📊 学習の進捗
+## 🤝 よくある質問
 
-学習が進んだらチェックしていきましょう！
+### Q. どの順番で学べばいい？
 
-- [ ] Codespacesの起動
-- [ ] Hello, World! の実行
-- [ ] コードの編集
-- [ ] GitHubへの保存（commit & push）
-- [ ] 変数と型の学習
-- [ ] 関数の学習
-- [ ] 制御構文の学習
-- [ ] 所有権の理解
-- [ ] 構造体の学習
-- [ ] エラー処理の学習
+ブログ記事の順番通りに進めてください：
+
+1. 第1回：環境構築 → Hello, World!
+2. 第2回：変数と型 → 練習問題に挑戦
+3. 第3回以降：順次公開
+
+### Q. Codespacesの無料枠は？
+
+GitHubの無料アカウントで、月に一定時間まで無料で使えます。
+
+**節約のコツ：**
+- 使わないときは停止する（左下の「Codespaces」ボタン → 「Stop」）
+- 30分放置すると自動停止します
+
+### Q. エラーが出た！
+
+**よくあるエラー：**
+
+#### ターミナルが見えない
+- 上部メニュー「View」→「Terminal」
+- または **Ctrl+`**
+
+#### git index.lockエラー
+```bash
+cd /workspaces/rust-practice
+rm -f .git/index.lock
+```
+
+#### コマンドを間違えた
+- **Ctrl+C** で中断
+
+---
+
+## 🌐 外部リソース
+
+### 公式ドキュメント
+- [The Rust Programming Language（日本語版）](https://doc.rust-jp.rs/book-ja/)
+- [Rust by Example（日本語版）](https://doc.rust-jp.rs/rust-by-example-ja/)
+- [Rust公式サイト](https://www.rust-lang.org/ja)
+
+### ブログ
+- [学びを始めよう - Rustカテゴリ](https://my-studies.org/category/manabi/it-basic/rust/)
+
+---
+
+## 📊 学習の進捗チェックリスト
+
+- [ ] 第1回：Codespacesの起動
+- [ ] 第1回：Hello, World! の実行
+- [ ] 第1回：GitHubへの保存（commit & push）
+- [ ] 第2回：変数と型の学習
+- [ ] 第2回：練習問題を全て完了
+- [ ] 第3回：関数の学習
+- [ ] 第4回：制御構文の学習
+- [ ] 第5回：所有権の理解
 
 ---
 
@@ -295,4 +255,12 @@ Rustのエラーメッセージはとても親切です。解決方法も提案�
 
 ---
 
+## 📝 ライセンス
+
+このリポジトリは学習目的で自由に使用できます。
+
+---
+
 **Happy Coding!** 🚀
+
+**ブログ記事：** [学びを始めよう](https://my-studies.org/)

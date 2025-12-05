@@ -1,0 +1,44 @@
+[package]
+name = "variables_exercises"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ex01_basic"
+path = "src/bin/ex01_basic.rs"
+
+[[bin]]
+name = "ex02_shadowing"
+path = "src/bin/ex02_shadowing.rs"
+
+[[bin]]
+name = "ex03_types"
+path = "src/bin/ex03_types.rs"
+
+[[bin]]
+name = "ex04_compound"
+path = "src/bin/ex04_compound.rs"
+
+[[bin]]
+name = "ex05_conversion"
+path = "src/bin/ex05_conversion.rs"
+
+[[bin]]
+name = "ex06_constants"
+path = "src/bin/ex06_constants.rs"
+
+[[bin]]
+name = "challenge01_bmi"
+path = "src/bin/challenge01_bmi.rs"
+
+[[bin]]
+name = "challenge02_temperature"
+path = "src/bin/challenge02_temperature.rs"
+
+[[bin]]
+name = "challenge03_student"
+path = "src/bin/challenge03_student.rs"
+
+[[bin]]
+name = "challenge04_scores"
+path = "src/bin/challenge04_scores.rs"
