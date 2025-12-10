@@ -56,8 +56,7 @@ cd exercises/02_variables
 cargo run --bin variables_exercises
 ```
 
-または単に：
-
+または（Cargo.tomlでdefault-runを設定済みなら）
 ```bash
 cargo run
 ```
