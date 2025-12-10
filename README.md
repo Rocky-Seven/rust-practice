@@ -114,7 +114,9 @@ cat docs/02_variables.md
 ```bash
 # 第2回の練習問題に取り組む
 cd exercises/02_variables
-cargo run
+cargo run --bin variables_exercises  # ← 明示的に指定
+# または単に
+cargo run  # ← Cargo.tomlでdefault-run設定済みならこれでOK
 
 # 個別の練習問題を実行
 cargo run --bin ex01_basic

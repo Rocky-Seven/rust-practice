@@ -49,10 +49,16 @@
 
 ## 🚀 実行方法
 
-### すべての練習問題を実行
+### 練習問題一覧を表示
 
 ```bash
 cd exercises/02_variables
+cargo run --bin variables_exercises
+```
+
+または単に：
+
+```bash
 cargo run
 ```
 
@@ -67,6 +73,16 @@ cargo run --bin ex02_shadowing
 
 # チャレンジ1を実行
 cargo run --bin challenge01_bmi
+```
+
+**便利なコマンド：**
+
+```bash
+# すべての練習問題をビルド（エラーチェック）
+cargo build
+
+# 特定の練習問題だけビルド
+cargo build --bin ex01_basic
 ```
 
 ---
