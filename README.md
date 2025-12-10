@@ -194,7 +194,6 @@ rust-practice/
 3. 第3回以降：順次公開
 
 ### Q. Codespacesの無料枠は？
-### Q. Codespacesの無料枠は？
 
 GitHubの無料アカウントには、以下の無料枠があります：
 
