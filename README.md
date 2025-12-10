@@ -194,12 +194,34 @@ rust-practice/
 3. 第3回以降：順次公開
 
 ### Q. Codespacesの無料枠は？
+### Q. Codespacesの無料枠は？
 
-GitHubの無料アカウントで、月に一定時間まで無料で使えます。
+GitHubの無料アカウントには、以下の無料枠があります：
+
+**無料枠（2025年12月時点）：**
+- **コンピューティング時間：** 月120時間（2コアマシンの場合）
+- **ストレージ容量：** 15 GB
+
+**重要な注意点：**
+- Codespacesを**停止しても、ストレージは消費し続けます**
+- 長期間使わないCodespacesは**削除**することを推奨
 
 **節約のコツ：**
-- 使わないときは停止する（左下の「Codespaces」ボタン → 「Stop」）
-- 30分放置すると自動停止します
+1. **使わないときは停止する**
+   - 左下の「Codespaces」ボタン → 「Stop Current Codespace」
+   - または30分操作しないと自動停止
+   
+2. **不要なCodespacesは削除する**
+   - GitHubの設定 → Codespaces → 削除
+   - 削除してもGitHubにpushしたコードは残る
+   
+3. **定期的に確認する**
+   - [Codespaces使用状況ページ](https://github.com/settings/billing)で確認
+
+**ストレージ管理のベストプラクティス：**
+- 作業が終わったら必ず `git push` してからCodespacesを削除
+- 1つのリポジトリに複数のCodespacesを作らない
+- 長期間（1週間以上）使わないCodespacesは削除する
 
 ### Q. エラーが出た！
 
