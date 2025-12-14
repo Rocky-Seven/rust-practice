@@ -67,17 +67,29 @@
 
 ---
 
-## 準備：新しいプロジェクトを作成
+## 準備：体験用プロジェクトを開く
 
-Codespacesを開いて、ターミナルで以下のコマンドを実行しよう。
+> **📁 作業場所:** `trials/02_variables/`  
+> このディレクトリで自由にコードを試してみよう。失敗しても問題ない！
+
+Codespacesを開いて、ターミナルで以下を実行しよう。
 
 ```bash
-cd /workspaces/rust-practice
-cargo new variables_practice
-cd variables_practice
+cd /workspaces/rust-practice/trials/02_variables
+
+# VSCodeでファイルを開く
+code src/main.rs
+
+# 動作確認
+cargo run
 ```
 
-これで、`variables_practice`という新しいプロジェクトが作成された。
+これで、体験用プロジェクトの準備が整った。
+
+**📝 このディレクトリについて：**
+- ブログ記事を読みながら、コードを試す場所
+- `src/main.rs` を自由に編集できる
+- エラーが出ても大丈夫、どんどん試そう！
 
 ---
 
@@ -782,6 +794,41 @@ fn main() {
 ---
 
 ## 総合練習問題
+
+ここまでの内容を理解できたら、構造化された練習問題に挑戦しよう！
+
+### 練習問題の場所
+
+```bash
+cd /workspaces/rust-practice/exercises/02_variables
+
+# 練習問題一覧を表示
+cargo run
+
+# 個別の練習問題を実行
+cargo run --bin ex01_basic
+cargo run --bin ex02_shadowing
+cargo run --bin challenge01_bmi
+```
+
+> **📁 練習問題ディレクトリ:** `exercises/02_variables/`  
+> こちらには段階的な練習問題が用意されている。詳しくは[README.md](https://github.com/Rocky-Seven/rust-practice/tree/main/exercises/02_variables)を参照。
+
+---
+
+## 🎯 学習の進め方
+
+### 1. 体験する（trials/）
+- ブログ記事を読みながら `trials/02_variables/` で試す
+- 自由にコードを書いて実験
+- エラーを恐れず、どんどん試す
+
+### 2. 練習する（exercises/）
+- 体験が終わったら `exercises/02_variables/` で練習
+- 構造化された問題を順番に解く
+- 解答例も用意されている
+
+---
 
 ### チャレンジ1：BMI計算機
 

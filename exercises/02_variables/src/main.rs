@@ -1,4 +1,5 @@
 fn main() {
+     
     println!("=== 第2回：変数と型 - 練習問題 ===");
     println!();
     println!("個別の練習問題を実行してください：");
@@ -9,6 +10,7 @@ fn main() {
     println!("  cargo run --bin ex03_types");
     println!("  cargo run --bin ex04_compound");
     println!();
+     
     println!("応用編：");
     println!("  cargo run --bin ex05_conversion");
     println!("  cargo run --bin ex06_constants");
@@ -19,4 +21,5 @@ fn main() {
     println!("  cargo run --bin challenge03_student");
     println!("  cargo run --bin challenge04_scores");
     println!();
+   
 }
