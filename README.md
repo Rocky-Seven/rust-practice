@@ -31,7 +31,7 @@
 ---
 
 ### 第2回：変数と型
-**ブログ記事：** （リンクは公開後に追加）
+**ブログ記事：**  [Rust入門（2）「変数と型を学ぼう！」](https://my-studies.org/introduction-to-rust-2-lets-learn-about-variables-and-types/)
 - 変数の宣言（`let`、`mut`）
 - シャドーイング
 - 基本的なデータ型
@@ -44,10 +44,18 @@
 ---
 
 ### 第3回：関数とスコープ（準備中）
-**ブログ記事：** （準備中）
+**ブログ記事：** [Rust入門（3）「関数とスコープを学ぼう！」](https://my-studies.org/introduction-to-rust-3-lets-learn-about-functions-and-scope/)
+
 - 関数の定義と呼び出し
 - パラメータと戻り値
 - 式と文の違い
+- スコープ
+
+**リポジトリ資料：**
+
+- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/03_functions.md)
+- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/03_functions)
+```
 
 ---
 
@@ -163,13 +171,16 @@ git push
 rust-practice/
 ├── docs/                     # 📚 学習ドキュメント（ブログ連動）
 │   ├── 01_setup.md          # 第1回：環境構築
-│   └── 02_variables.md      # 第2回：変数と型
+│   ├── 02_variables.md      # 第2回：変数と型
+│   └── 03_functions.md      # 第3回：関数とスコープ
 │
 ├── trials/                   # 🧪 体験・お試し用
-│   └── 02_variables/        # 第2回で自由に試す場所
+│   ├── 02_variables/        # 第2回で自由に試す場所
+│   └── 03_functions/        # 第3回で自由に試す場所
 │
 ├── exercises/                # 🏋️ 練習問題
-│   └── 02_variables/        # 第2回の構造化された練習問題
+│   ├── 02_variables/        # 第2回の構造化された練習問題
+│   └── 03_functions/        # 第3回の構造化された練習問題
 │
 └── projects/                 # 🚀 実践プロジェクト
     └── hello_rust/          # Hello, World!
@@ -274,7 +285,8 @@ rm -f .git/index.lock
 - [ ] 第1回：GitHubへの保存（commit & push）
 - [ ] 第2回：変数と型の学習
 - [ ] 第2回：練習問題を全て完了
-- [ ] 第3回：関数の学習
+- [ ] 第3回：関数とスコープの学習
+- [ ] 第3回：練習問題を全て完了
 - [ ] 第4回：制御構文の学習
 - [ ] 第5回：所有権の理解
 
