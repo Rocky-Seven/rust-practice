@@ -3,6 +3,15 @@
 > **この記事は「Rust入門（2）変数と型を学ぼう！」の続編です。**
 > まだ環境構築をしていない方は、[第1回の記事](https://my-studies.org/get-started-with-rust-on-github-codespaces/)を先にお読みください。
 
+Codespacesをいったん削除した場合、Rustのインストールから始めてください。
+```
+1. インストールコマンドを実行
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+2. 環境を読み込む
+source $HOME/.cargo/env
+3. 確認
+rustc --version
+```
 ---
 
 ## はじめに
@@ -40,6 +49,11 @@ code src/main.rs
 
 # 動作確認
 cargo run
+
+# 練習問題
+cd /workspaces/rust-practice/exercises/03_functions
+cargo run
+
 ```
 
 これで、体験用プロジェクトの準備が整った。
