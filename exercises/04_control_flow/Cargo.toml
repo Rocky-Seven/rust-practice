@@ -1,0 +1,7 @@
+[package]
+name = "control_flow_exercises"
+version = "0.1.0"
+edition = "2021"
+default-run = "control_flow_exercises"
+
+[dependencies]
