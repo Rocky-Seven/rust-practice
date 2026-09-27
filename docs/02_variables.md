@@ -83,9 +83,60 @@ code src/main.rs
 # 動作確認
 cargo run
 ```
-
 これで、体験用プロジェクトの準備が整った。
 
+## トラブルシューティング
+```bash
+cargo run 
+error: failed to parse manifest at /workspaces/rust-practice/trials/02_variables/Cargo.toml
+```
+(略）
+
+02_variablesのsrc/main.rsが存在しないために起きているエラーです。
+
+原因
+
+trials/02_variables/.gitignoreにも、おそらくsrc/main.rsが書かれていたはずですが、  
+このファイルは最初からGitHubに一度もpushされていません。
+
+前回まで動いていたのは、最初にファイルを作ったCodespaceに、実体としてのmain.rsが残っていたからです。  
+しかし、以下のようなことがあると、ファイル自体が消えてしまいます。
+
+- Codespaceを作り直した（前のCodespaceが削除された）
+- 別の環境でgit cloneまたはgit pullした
+
+.gitignoreで除外されているファイルは、リポジトリの中に実体がないため、
+新しい環境には最初から存在しません。
+
+確認方法
+```bash
+ls trials/02_variables/src
+```
+何も表示されない、またはmain.rsがなければ、上記の理由です。
+
+### 直し方
+
+main.rsを作り直せば解決します。最低限、以下の内容があれば動きます。
+
+```bash
+cd /workspaces/rust-practice/trials/02_variables
+
+cat > src/main.rs << 'EOF'
+// 第2回：変数と型 - 体験用
+// このファイルは自由に編集してください
+
+fn main() {
+    println!("変数と型を学ぼう！");
+
+    // ここに自由にコードを書いてください
+}
+EOF
+
+```
+再度実行してください。
+```bash
+cargo run
+```
 **📝 このディレクトリについて：**
 - ブログ記事を読みながら、コードを試す場所
 - `src/main.rs` を自由に編集できる
