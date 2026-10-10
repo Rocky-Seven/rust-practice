@@ -208,30 +208,30 @@ git push
 
 
 ```
-├── docs/
-│   ├── 01_setup.md
-│   ├── 02_variables.md
-│   ├── 03_functions.md
-│   ├── 04_control_flow.md
+├── docs/                     # 📚 学習ドキュメント（ブログ連動）
+│   ├── 01_setup.md           # 第1回：環境構築
+│   ├── 02_variables.md       # 第2回：変数と型
+│   ├── 03_functions.md       # 第3回：関数とスコープ
+│   ├── 04_control_flow.md    # 第4回：制御構文
 │   ├── 05_ownership.md       # 第5回：所有権のルールとムーブ
 │   ├── 06_borrowing.md       # 第6回：クローンと借用
 │   └── 07_slices.md          # 第7回：スライス
 │
-├── trials/
-│   ├── 02_variables/
-│   ├── 03_functions/
-│   ├── 04_control_flow/
-│   ├── 05_ownership/
-│   ├── 06_borrowing/
-│   └── 07_slices/
+├── t# 🧪 体験・お試し用
+│   ├── 02_variables/        # 第2回で自由に試す場所
+│   ├── 03_functions/        # 第3回で自由に試す場所
+│   ├── 04_control_flow/     # 第4回で自由に試す場所
+│   ├── 05_ownership/        # 第5回で自由に試す場所
+│   ├── 06_borrowing/        # 第6回で自由に試す場所
+│   └── 07_slices/           # 第7回で自由に試す場所
 │
-├── exercises/
-│   ├── 02_variables/
-│   ├── 03_functions/
-│   ├── 04_control_flow/
-│   ├── 05_ownership/
-│   ├── 06_borrowing/
-│   └── 07_slices/
+├── exercises/               # 🏋️ 練習問題
+│   ├── 02_variables/        # 第2回の練習問題
+│   ├── 03_functions/        # 第3回の練習問題
+│   ├── 04_control_flow/     # 第4回の練習問題
+│   ├── 05_ownership/        # 第5回の練習問題
+│   ├── 06_borrowing/        # 第6回の練習問題
+│   └── 07_slices/           # 第7回の練習問題
 ```
 
 ---
@@ -345,7 +345,7 @@ rm -f .git/index.lock
 - [ ] 第7回：練習問題を全て完了
 
 ---
-# 補足：trials/*/.gitignore について
+## 補足：trials/*/.gitignore について
 
 `trials/05_ownership`、`06_borrowing`、`07_slices` の `src/main.rs` は、第4回までと同じく `.gitignore` で追跡対象外にしてあります。`git add -f` で強制追加しないかぎり、実験コードはpushされません。
 
