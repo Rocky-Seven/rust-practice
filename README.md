@@ -43,7 +43,7 @@
 
 ---
 
-### 第3回：関数とスコープ（準備中）
+### 第3回：関数とスコープ
 **ブログ記事：** [Rust入門（3）「関数とスコープを学ぼう！」](https://my-studies.org/introduction-to-rust-3-lets-learn-about-functions-and-scope/)
 
 - 関数の定義と呼び出し
@@ -59,7 +59,7 @@
 
 ---
 
-### 第4回：制御構文（準備中）
+### 第4回：制御構文
 **ブログ記事：** [Rust入門（4）「制御構文を学ぼう！」](https://my-studies.org/introduction-to-rust-4-lets-learn-about-control-flow/)
 
 - if式
@@ -73,11 +73,44 @@
 
 ---
 
-### 第5回：所有権（準備中）
-**ブログ記事：** （準備中）
-- 所有権とは
-- 借用（Borrowing）
-- スライス（Slice）
+### 第5回：所有権のルールとムーブ
+
+**ブログ記事：** [Rust入門（5）「所有権のルールとムーブ」](https://my-studies.org/introduction-to-rust-5-ownership-and-move/)
+
+- 所有権の3つのルール
+- ムーブ（所有権の移動）
+
+**リポジトリ資料：**
+
+- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/05_ownership.md)
+- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/05_ownership)
+
+### 第6回：クローンと借用（準備中）
+
+**ブログ記事：** [Rust入門（6）「クローンと借用」](https://my-studies.org/introduction-to-rust-6-clone-and-borrowing/)
+
+- クローン（`.clone()`）
+- 借用と参照（`&`、`&mut`）
+- 借用のルール
+
+**リポジトリ資料：**
+
+- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/06_borrowing.md)
+- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/06_borrowing)
+
+### 第7回：スライス（準備中）
+
+**ブログ記事：** [Rust入門（7）「スライス」](https://my-studies.org/introduction-to-rust-7-slices/)
+
+- 文字列スライス（`&str`）
+- 配列スライス（`&[T]`）
+- 所有権シリーズのまとめ
+
+**リポジトリ資料：**
+
+- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/07_slices.md)
+- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/07_slices)
+```
 
 ---
 
@@ -173,26 +206,32 @@ git push
 
 ## 🗂️ ディレクトリ構造
 
+
 ```
-rust-practice/
-├── docs/                     # 📚 学習ドキュメント（ブログ連動）
-│   ├── 01_setup.md          # 第1回：環境構築
-│   ├── 02_variables.md      # 第2回：変数と型
-│   ├── 03_functions.md      # 第3回：関数とスコープ
-│   └── 04_control_flow.md   # 第4回：制御構文
+├── docs/
+│   ├── 01_setup.md
+│   ├── 02_variables.md
+│   ├── 03_functions.md
+│   ├── 04_control_flow.md
+│   ├── 05_ownership.md       # 第5回：所有権のルールとムーブ
+│   ├── 06_borrowing.md       # 第6回：クローンと借用
+│   └── 07_slices.md          # 第7回：スライス
 │
-├── trials/                   # 🧪 体験・お試し用
-│   ├── 02_variables/        # 第2回で自由に試す場所
-│   ├── 03_functions/        # 第3回で自由に試す場所
-│   └── 04_control_flow/     # 第4回で自由に試す場所
+├── trials/
+│   ├── 02_variables/
+│   ├── 03_functions/
+│   ├── 04_control_flow/
+│   ├── 05_ownership/
+│   ├── 06_borrowing/
+│   └── 07_slices/
 │
-├── exercises/                # 🏋️ 練習問題
-│   ├── 02_variables/        # 第2回の構造化された練習問題
-│   ├── 03_functions/        # 第3回の構造化された練習問題
-│   └── 04_control_flow/     # 第4回の構造化された練習問題
-│
-└── projects/                 # 🚀 実践プロジェクト
-    └── hello_rust/          # Hello, World!
+├── exercises/
+│   ├── 02_variables/
+│   ├── 03_functions/
+│   ├── 04_control_flow/
+│   ├── 05_ownership/
+│   ├── 06_borrowing/
+│   └── 07_slices/
 ```
 
 ---
@@ -298,8 +337,17 @@ rm -f .git/index.lock
 - [ ] 第3回：練習問題を全て完了
 - [ ] 第4回：制御構文の学習
 - [ ] 第4回：練習問題を全て完了
+- [ ] 第5回：所有権のルールとムーブの学習
+- [ ] 第5回：練習問題を全て完了
+- [ ] 第6回：クローンと借用の学習
+- [ ] 第6回：練習問題を全て完了
+- [ ] 第7回：スライスの学習
+- [ ] 第7回：練習問題を全て完了
 
 ---
+# 補足：trials/*/.gitignore について
+
+`trials/05_ownership`、`06_borrowing`、`07_slices` の `src/main.rs` は、第4回までと同じく `.gitignore` で追跡対象外にしてあります。`git add -f` で強制追加しないかぎり、実験コードはpushされません。
 
 ## 🎓 最後に
 
