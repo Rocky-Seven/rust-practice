@@ -60,7 +60,7 @@
 ---
 
 ### 第4回：制御構文
-**ブログ記事：** [Rust入門（4）「制御構文を学ぼう！」](https://my-studies.org/introduction-to-rust-4-lets-learn-about-control-flow/)
+**ブログ記事：** [Rust入門（4）「制御構文を学ぼう！」](https://my-studies.org/introduction-to-rust-4-control-flow-statement/)
 
 - if式
 - loop、while、for
@@ -75,7 +75,7 @@
 
 ### 第5回：所有権のルールとムーブ
 
-**ブログ記事：** [Rust入門（5）「所有権のルールとムーブ」](https://my-studies.org/introduction-to-rust-5-ownership-and-move/)
+**ブログ記事：** [Rust入門（5）「所有権のルールとムーブ」](https://my-studies.org/introduction-to-rust-5-ownership01/)
 
 - 所有権の3つのルール
 - ムーブ（所有権の移動）
@@ -85,9 +85,9 @@
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/05_ownership.md)
 - [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/05_ownership)
 
-### 第6回：クローンと借用（準備中）
+### 第6回：クローンと借用
 
-**ブログ記事：** [Rust入門（6）「クローンと借用」](https://my-studies.org/introduction-to-rust-6-clone-and-borrowing/)
+**ブログ記事：** [Rust入門（6）「クローンと借用」](https://my-studies.org/introduction-to-rust-6-ownership02/)
 
 - クローン（`.clone()`）
 - 借用と参照（`&`、`&mut`）
