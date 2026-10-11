@@ -135,6 +135,46 @@ fn greet(name: String) {
 
 1回目の`greet(name)`で所有権が関数に移動するため、2回目の`greet(name)`はもう存在しない値を使おうとしてエラーになる。今回は2つ用意したが、次回学ぶ「クローン」や「借用」を使えば、1つの`String`を何度も使い回すこともできる。
 
+## exercises/05_ownershipの解答例
+
+GitHubの`exercises/05_ownership/`にある練習問題2問の解答例である。
+
+### ex01_move：ムーブの基本
+
+```rust
+fn describe(text: String) -> String {
+    format!("長さ: {}文字", text.chars().count())
+}
+```
+
+`text.chars().count()`で文字列の文字数を数え、`format!`で「長さ: N文字」という新しい文字列を作って返す。`format!`は`println!`と同じ`{}`の書き方だが、出力はせず`String`として返す。
+
+### ex02_fix：エラーを直す練習
+
+ファイル内のコメントにある「2行目」は、以下のように`print_name(name);`をもう一度呼び出す行を指している（コメントアウトを外すとエラーが再現される）。
+
+```rust
+fn main() {
+    let name = String::from("花子");
+    print_name(name);
+    // print_name(name); // ← この行のコメントを外すとエラーになる
+}
+```
+
+1回目の`print_name(name)`で所有権が移動するため、2回目の呼び出しはもう存在しない値を使おうとしてエラーになる。`.clone()`で複製すれば直る。
+
+```rust
+fn main() {
+    let name = String::from("花子");
+    print_name(name.clone());
+    print_name(name);
+}
+
+fn print_name(name: String) {
+    println!("名前: {}", name);
+}
+```
+
 ## 保存して次に進もう
 
 ひととおり試したら、学習内容を保存しておこう。

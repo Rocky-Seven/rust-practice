@@ -139,6 +139,31 @@ fn str_len(text: &String) -> usize {
 
 `.len()`はバイト数を返す点に注意（日本語の1文字は3バイト）。文字数を数えたい場合は`.chars().count()`を使う。
 
+## exercises/06_borrowingの解答例
+
+GitHubの`exercises/06_borrowing/`にある練習問題2問の解答例である。
+
+### ex01_borrow：不変の借用
+
+```rust
+fn word_count(text: &str) -> usize {
+    text.split_whitespace().count()
+}
+```
+
+`.split_whitespace()`で、スペース（や改行・タブ）区切りの単語に分割するイテレータを作り、`.count()`で個数を数える。
+
+### ex02_mut_borrow：可変の借用
+
+```rust
+fn double_it(n: &mut i32) {
+    *n *= 2;
+}
+```
+
+`n`は`&mut i32`（整数への可変参照）である。参照先の値そのものを書き換えるには、`*n`のように`*`（デリファレンス）を付ける。`*n *= 2`は「参照先の値を2倍にして上書きする」という意味である。
+
+
 ## 保存して次に進もう
 
 ```bash
