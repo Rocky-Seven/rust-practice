@@ -588,9 +588,17 @@ B: 6
 
 ---
 
-## 総合練習問題
+## 練習問題として、確認問題とチャレンジ問題を用意しました
 
-ここまでの内容を理解できたら、構造化された練習問題に挑戦しよう！
+確認問題は、記事の理解確認用の問題である。
+- ex01_basic
+- ex02_return
+- ex03_scope
+
+チャレンジ問題は、学んだ内容を使って新しい題材に挑戦する問題である。
+- challenge01_bmi
+- challenge02_temperature
+- challenge03_circle
 
 ### 練習問題の場所
 
@@ -600,10 +608,11 @@ cd /workspaces/rust-practice/exercises/03_functions
 # 練習問題一覧を表示
 cargo run
 
-# 個別の練習問題を実行
+# 確認問題を実行
 cargo run --bin ex01_basic
 cargo run --bin ex02_return
 cargo run --bin ex03_scope
+#チャレンジ問題を実行
 cargo run --bin challenge01_bmi
 cargo run --bin challenge02_temperature
 cargo run --bin challenge03_circle

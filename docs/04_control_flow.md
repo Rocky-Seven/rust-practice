@@ -689,10 +689,11 @@ cd /workspaces/rust-practice/exercises/04_control_flow
 # 練習問題一覧を表示
 cargo run
 
-# 個別の練習問題を実行
+# 確認問題を実行
 cargo run --bin ex01_if
 cargo run --bin ex02_loop
 cargo run --bin ex03_match
+#チャレンジ問題を実行
 cargo run --bin challenge01_fizzbuzz
 cargo run --bin challenge02_prime
 cargo run --bin challenge03_grade
