@@ -108,8 +108,8 @@
 
 **リポジトリ資料：**
 
-- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/07_slices.md)
-- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/07_slices)
+- [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/)
+- [練習問題](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/)
 ```
 
 ---
