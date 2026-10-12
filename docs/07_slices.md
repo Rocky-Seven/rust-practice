@@ -8,13 +8,14 @@
 
 まだ、GitHub Codespacesで環境構築をしていない方は、ブログ記事[第1回「GitHub Codespaces で Rust を始めよう！」](https://my-studies.org/get-started-with-rust-on-github-codespaces/)を先にお読みください。
 
-1. 体験する（trials/）
-ブログ記事を読みながら、trials/07_slices/で自由にコードを試す
-自分で書き換えたり、わざとエラーを起こしたりして実験する
-2. 練習する（exercises/）
-体験が終わったら、exercises/07_slices/で構造化された練習問題に挑戦する
-todo!()の部分を自分のコードに書き換えて完成させる
-解答例も用意されている
+### 1. 体験する（trials/）
+- ブログ記事を読みながら、`trials/07_slices/`で自由にコードを試す
+- 自分で書き換えたり、わざとエラーを起こしたりして実験する
+
+### 2. 練習する（exercises/）
+- 体験が終わったら、`exercises/07_slices/`で構造化された練習問題に挑戦する
+- `todo!()`の部分を自分のコードに書き換えて完成させる
+- 解答例も用意されている
 
 
 ## 準備
