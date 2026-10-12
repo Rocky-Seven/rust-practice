@@ -39,7 +39,7 @@
 
 **リポジトリ資料：**
 - [学習ガイド](./docs/02_variables.md)
-- [練習問題プロジェクト](./exercises/02_variables/)
+- [練習問題](./exercises/02_variables/)
 
 ---
 
@@ -54,7 +54,7 @@
 **リポジトリ資料：**
 
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/03_functions.md)
-- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/03_functions)
+- [練習問題](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/03_functions)
 
 
 ---
@@ -69,7 +69,7 @@
 **リポジトリ資料：**
 
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/04_control_flow.md)
-- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/04_control_flow)
+- [練習問題](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/04_control_flow)
 
 ---
 
@@ -83,7 +83,7 @@
 **リポジトリ資料：**
 
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/05_ownership.md)
-- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/05_ownership)
+- [練習問題](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/05_ownership)
 
 ### 第6回：クローンと借用
 
@@ -96,7 +96,7 @@
 **リポジトリ資料：**
 
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/06_borrowing.md)
-- [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/06_borrowing)
+- [練習問題](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/06_borrowing)
 
 ### 第7回：スライス
 
