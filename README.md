@@ -98,7 +98,7 @@
 - [学習ガイド](https://github.com/Rocky-Seven/rust-practice/blob/main/docs/06_borrowing.md)
 - [練習問題プロジェクト](https://github.com/Rocky-Seven/rust-practice/blob/main/exercises/06_borrowing)
 
-### 第7回：スライス（準備中）
+### 第7回：スライス
 
 **ブログ記事：** [Rust入門（7）「スライス」](https://my-studies.org/introduction-to-rust-7-slices/)
 
