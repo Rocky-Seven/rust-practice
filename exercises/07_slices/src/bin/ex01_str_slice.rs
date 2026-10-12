@@ -10,17 +10,9 @@
 // テスト: cargo test --bin ex01_str_slice
 
 fn first_word(text: &str) -> &str {
-    let bytes = text.as_bytes();
-
-    for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-            return &text[0..i];
-        }
-    }
-
-    text
+    // TODO: 最初の単語を返そう
+    todo!()
 }
-
 
 fn main() {
     let sentence = String::from("Rust は 楽しい");
